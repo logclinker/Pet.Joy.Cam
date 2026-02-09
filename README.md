@@ -1,6 +1,6 @@
 # Pet.Joy.Cam (YourPet Cams)
 
-![Uploading image.png…]()
+<img width="1904" height="1239" alt="image" src="https://github.com/user-attachments/assets/2e64b694-27fd-4af2-81f0-2c64ea371d54" />
 
 Self-hosted ESP32-CAM snapshot hub + live-updating dashboard.
 
