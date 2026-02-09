@@ -1,0 +1,18 @@
+[Unit]
+Description=Pluto Cam Hub (port 1212)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/anri/.openclaw/workspace/plutcam-hub
+Environment=PORT=1212
+Environment=HOST=127.0.0.1
+# Optional: set ADMIN_TOKEN here if you want /admin/keys
+# Environment=ADMIN_TOKEN=...
+ExecStart=/usr/bin/node /home/anri/.openclaw/workspace/plutcam-hub/server.mjs
+Restart=always
+RestartSec=2
+
+[Install]
+WantedBy=default.target

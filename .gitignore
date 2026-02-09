@@ -1,0 +1,25 @@
+# OS / editor
+.DS_Store
+*.swp
+*.swo
+
+# Node
+**/node_modules/
+
+# PlatformIO
+**/.pio/
+
+# Hub runtime data (contains secrets)
+plutcam-hub/data/
+!plutcam-hub/data/.gitkeep
+
+# Env files
+**/.env
+
+# Frames / media
+**/*.jpg
+**/*.jpeg
+**/*.png
+
+# Logs
+*.log

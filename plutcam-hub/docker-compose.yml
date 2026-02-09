@@ -1,0 +1,17 @@
+services:
+  plutcam-hub:
+    build: .
+    container_name: plutcam-hub
+    restart: unless-stopped
+    ports:
+      - "1212:1212"
+    environment:
+      # bind to all interfaces inside container
+      HOST: "0.0.0.0"
+      PORT: "1212"
+      DATA_DIR: "/app/data"
+      # Optional: enable admin flash button in dashboard when opened with ?token=
+      ADMIN_TOKEN: "${ADMIN_TOKEN:-}"
+    volumes:
+      # Persist keys.json + frames
+      - ./data:/app/data
