@@ -1,5 +1,7 @@
 # Pet.Joy.Cam (YourPet Cams)
 
+![Uploading image.png…]()
+
 Self-hosted ESP32-CAM snapshot hub + live-updating dashboard.
 
 This repo contains two parts:
